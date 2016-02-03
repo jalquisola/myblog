@@ -10,6 +10,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'monologue', '0.5.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+gem 'bower-rails', "~> 0.10.0"
 
 gem 'jquery-rails'
 gem 'turbolinks'

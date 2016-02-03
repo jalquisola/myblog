@@ -1,0 +1,28 @@
+<div class="boxed sticky push-down-45">
+<!-- Featured image and meta start -->
+  <%= render partial: 'readable/posts/meta', locals: {post: post} %>
+  <!-- Start of the blogpost -->
+  <div class="row">
+    <div class="col-xs-10  col-xs-offset-1">
+  <!-- Start of the content -->
+      <div class="post-content--front-page">
+        <h2 class="front-page-title">
+        <a href="<%= post.full_url%>"><%= post.title %></a>
+        </h2>
+        <%= truncate_html(post.content, length: Monologue::Config.preview_size, omission: '...') %>
+      </div>
+      <div class="tags" data-monologue="tags">
+        <%= render post.tags %>
+      </div>
+  <!-- End of the content -->
+      <a href='<%=post.full_url%>'>
+        <div class="read-more">
+          Continue reading
+          <div class="read-more__arrow">
+            <span class="glyphicon  glyphicon-chevron-right"></span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

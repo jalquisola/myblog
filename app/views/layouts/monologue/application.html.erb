@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <%= render 'layouts/monologue/application/head' %>
+</head>
+<body>
+  <%= render 'layouts/monologue/application/header' %>
+  <%= render 'layouts/monologue/application/search_panel' %>
+
+  <div class="container">
+    <div class="row">
+      <% flash.each do |name, msg| %>
+        <div class="flash-notice">
+          <%= msg %>
+        </div>
+      <% end %>
+
+      <% if params[:action] == 'index' %>
+        <div class="col-xs-12  col-md-8">
+          <%= yield %>
+        </div>
+        <div class="col-xs-12  col-md-4">
+          <%= render 'layouts/readable/sidebar' %>
+        </div>
+      <% else %>
+        <div class="col-xs-12  col-md-12">
+          <%= yield %>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+
+  <footer class='footer'>
+    <%= render 'layouts/monologue/application/footer' %>
+  </footer>
+
+</body>
+</html>
