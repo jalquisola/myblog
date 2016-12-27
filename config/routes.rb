@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'pages#profile'
 
-  get "/python-machine-learning", controller: "pages", action: "python_machine_learning"
-  #mount Monologue::Engine, at: '/blog'
+  get "/adwords-expert", controller: "pages", action: "adwords_specialist"
+  get "/data-scientist-for-hire", controller: "pages", action: "data_scientist"
 end

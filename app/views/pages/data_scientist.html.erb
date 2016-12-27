@@ -4,23 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="">
-    <meta property="og:url" content="<%= root_url%>">
+    <meta property="og:url" content="<%= data_scientist_for_hire_url%>">
     <meta property="og:type" content="profile">
-    <meta property="og:title" content="Joseph Rey Alquisola">
-    <meta name="description" content="Senior Software Engineer. Data Scientist. Ruby on Rails Developer. Certified Google Adwords Specialist. Certified Google Analytics Expert.">
-    <meta property="og:description" content="Senior Software Engineer. Certified Google Adwords Specialist. Certified Google Analytics Expert.">
+    <meta property="og:title" content="<%= @title %>">
+    <meta name="description" content="<%= @description %>">
+    <meta property="og:description" content="<%= @description %>">
     <meta property="og:image" content="<%= asset_path 'profile.jpg'%>">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@jalquisola">
-    <meta name="twitter:title" content="Joseph Rey Alquisola">
-    <meta name="twitter:description" content="Senior Software Engineer. Certified Google Adwords Specialist. Certified Google Analytics Expert.">
+    <meta name="twitter:title" content="<%= @title%>">
+    <meta name="twitter:description" content="<%= data_scientist_for_hire_url%>">
     <meta name="twitter:image" content="<%= asset_path 'profile.jpg'%>">
 
-    <title>Joseph Rey Alquisola</title>
+    <title><%= @title %></title>
 
     <%= stylesheet_link_tag    'profile', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'profile', 'data-turbolinks-track' => true %>
 
     <link rel='shortcut icon' href="<%= asset_path 'me.jpeg'%>">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
@@ -41,7 +40,6 @@
               <ul id="nav" class="nav">
                 <li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="fa fa-user"></i></a></li>
                 <li class="menu-item"><a class="smoothScroll" href="#resume" title="Resume"><i class="fa fa-file"></i></a></li>
-                <li class="menu-item"><a class="smoothScroll" href="#work" title="Works"><i class="fa fa-briefcase"></i></a></li>
                 <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="fa fa-envelope"></i></a></li>
               </ul><!--/ uL#nav -->
             </div><!-- /.dropdown -->
@@ -56,8 +54,8 @@
       <div class="container">
         <div class="row centered">
           <div class="col-lg-12">
-            <h1>Joseph Alquisola</h1>
-            <h3>Senior Software Engineer | Data Scientist | Certified Google Adwords & Analytics Expert</h3>
+              <h1>Joseph Alquisola <i>Data Scientist</i></h1>
+            <h3><i>Machine Learning Developer | Certified Google Adwords Expert | Certified Google Analytics Expert</i></h3>
           </div><!--/.col-lg-12 -->
         </div><!--/.row -->
       </div><!--/.container -->
@@ -68,21 +66,21 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-2 col-lg-offset-1">
-            <h5>ABOUT</h5>
+            <h2 style="color: white;">DATA SCIENTIST OVERVIEW</h2>
           </div>
           <div class="col-lg-6">
-            <p>
-                6+ year’s professional experience managing development and deployment of web applications and APIs using Ruby on Rails(RoR) and ExpressJS. Delivered 97.5% of projects on time and reduce system architecture cost.
-            </p>
-            <p>
-                2+ year’s professional experience collecting, analyzing and evaluating large datasets using machine learning algorithms to understand trends, anomalies, opportunities and discover interesting insights that add business value.
-            </p>
-            <p>
-                Certified expert in optimizing search engine and mobile marketing campaigns in Google Adwords. Drove return on ad spend (ROAS) increases of 33% and more by understanding user behavior using Google Analytics Data.
-            </p>
+              <p>Hi! Thank you for visiting my website.</p>
+              <p>My name is Joseph Alquisola. I'm a Mathematics by training with 9-year professional experience both in web and <a href="https://en.wikipedia.org/wiki/Data_science">data science</a> project development.</p>
+              <p>I have been working on data science projects for the past 2 years. My recent experiences have been extracting data from different data warehouses, transforming data, loading data into a machine learning models and fine-tuning parameters of the models in the advertising industry.</p>
+              <p>
+                  In my current job, I developed a machine learning model that vets mobile ads which lead to 50% increase in our detection rate of malicious ads. Also, I optimized our search engine and mobile marketing campaigns by analyzing campaign results and <a href="https://analytics.google.com">Google Analytics</a> data which increase our Return on Ad Spend(ROAS) by 33%. 
+              </p>
+              <p>
+                  Now, I am looking forward to working in a growth-oriented company. Solve problems and build <a href="https://en.wikipedia.org/wiki/Machine_learning"> machine learning</a> solutions together with your Data Science Team and continue to have a direct positive impact to our customers.
+              </p>
           </div>
           <div class="col-lg-3">
-              <!--<p><a href="#"><i class="icon-file"></i></a> <sm>DOWNLOAD PDF</sm></p> -->
+              <a href="mailto:jralquisola@gmail.com" class="btn btn-lg btn-danger"><strong>Hire Me!</strong></a>
           </div>
         </div><!--/.row -->
       </div><!--/.container -->
@@ -139,7 +137,7 @@
       </p>
       <p><more>
           <ul>
-              <li>Ruby, Javascript, Python, Go, Java, C++</li>
+              <li>Ruby, Javascript, <a href="https://www.python.org/">Python</a></li>
           </ul>
           </more>
       </p>
@@ -149,7 +147,7 @@
       </p>
       <p><more>
           <ul>
-              <li>Ruby on Rails, ExpressJS</li>
+              <li>Ruby on Rails, ExpressJS, Flask</li>
           </ul>
           </more>
       </p>
@@ -159,7 +157,7 @@
       </p>
       <p><more>
           <ul>
-              <li>Pandas, NumPy, Scikit-learn, Matplotlib, Spark</li>
+              <li>Pandas, NumPy, <a href="http://scikit-learn.org/stable/">Scikit-learn</a>, Matplotlib, Spark</li>
           </ul>
           </more>
       </p>
@@ -169,7 +167,7 @@
       </p>
       <p><more>
           <ul>
-              <li>MySQL, PostgreSQL, Redis, MongoDB</li>
+              <li><a href="https://www.mysql.com/">MySQL</a>, PostgreSQL, Redis, MongoDB</li>
           </ul>
           </more>
       </p>
@@ -179,7 +177,7 @@
       </p>
       <p><more>
           <ul>
-              <li>ReactJS, Angular, Backbone</li>
+              <li>ReactJS, Backbone</li>
           </ul>
           </more>
       </p>
@@ -189,7 +187,7 @@
       </p>
       <p><more>
           <ul>
-              <li>RSpec, Capybara, Jasmine, Test Unit</li>
+              <li>RSpec, Capybara, Test Unit</li>
           </ul>
           </more>
       </p>
@@ -199,10 +197,11 @@
       </p>
       <p><more>
           <ul>
-              <li>Amazon Web Services Opsworks, Docker, Chef, Capistrano</li>
+              <li>Amazon Web Services Opsworks, Docker, Chef</li>
           </ul>
           </more>
       </p>
+        <a href="mailto:jralquisola@gmail.com" class="btn btn-lg btn-danger"><strong>Hire Me!</strong></a>
     </div>
   </div><!--/.row -->
   <br>
@@ -215,7 +214,7 @@
       <h5>WORK</h5>
     </div>
     <div class="col-lg-6">
-      <p><t>Senior Software Engineer</t><br/>
+        <p><h2>Senior Software Engineer | Data Scientist</h2><br/>
         Pocketmath Pte Ltd <br/>
       </p>
       <p><more>
@@ -231,6 +230,7 @@
             <li>Gathered reports data from different advertising platforms, such as, Twitter, Facebook, Google Adwords and provided insights to stakeholders which platforms are giving as effective return on ad spend (ROAS).</li>
           </ul>
          </more></p>
+        <a href="mailto:jralquisola@gmail.com" class="btn btn-lg btn-danger"><strong>Hire Me!</strong></a>
       </div>
     <div class="col-lg-3">
       <p><sm>DECEMBER 2013 - CURRENT</sm></p>
@@ -314,24 +314,10 @@
     <div class="col-lg-3">
       <p><sm>APRIL 2007</sm></p>
     </div>
-
-    <div class="col-lg-6 col-lg-offset-3">
-      <p>
-        <t>High School</t><br/>
-           University of the Philippines Cebu - High School <br/>
-         <i>4 Years</i>
-      </p>
-    </div>
-
-    <div class="col-lg-3">
-      <p><sm>APRIL 2003</sm></p>
-    </div>
-
   </div><!--/.row -->
   <br>
   <hr>
 </div><!--/.container -->
-
 
 <!--AWARDS DESCRIPTION -->
 <div class="container desc">
@@ -374,98 +360,7 @@
     <div class="col-lg-3">
       <p><sm>2003</sm></p>
     </div>
-
-    <div class="col-lg-6 col-lg-offset-3">
-      <p><t>Best in Conduct</t><br/>
-        University of the Philippines High School
-      </p>
-    </div>
-    <div class="col-lg-3">
-      <p><sm>2003</sm></p>
-    </div>
   </div><!--/.row -->
-  <br>
-  <hr>
-</div><!--/.container -->
-<section id="work" name="work"></section>
-<!--PORTFOLIO DESCRIPTION -->
-<div class="container desc">
-  <div class="row">
-    <div class="col-lg-2 col-lg-offset-1">
-      <h5>PORTFOLIO</h5>
-    </div>
-
-    <div class="col-lg-6">
-      <p><%= image_tag 'besthaven.png', class: 'img-responsive'%></p>
-    </div>
-    <div class="col-lg-3">
-        <p><a href='http://www.mybesthaven.com' target='_blank'>MyBestHaven</a></p>
-      <p><more>A platform for real estate developers and agents to market their
-          projects.<br/><br/>
-          <sm><i class="fa fa-tag"></i> web developer</sm>
-          <sm><i class="fa fa-tag"></i> web analyst</sm>
-          <sm><i class="fa fa-tag"></i> campaign manager</sm>
-          </more>
-      </p>
-    </div>
-
-    <div class="col-lg-6 col-lg-offset-3">
-      <p><%= image_tag 'smdcinvestments.png', class: 'img-responsive'%></p>
-    </div>
-    <div class="col-lg-3">
-        <p><a href='http://www.smdcinvestments.com' target='_blank'>SMDC Investments</a></p>
-      <p><more>A real estate website owned by a Filipino broker. It is a
-          platform for the broker and its customer to collaborate, discuss and
-          share specific Philippine property.<br/><br/>
-       <sm><i class="fa fa-tag"></i> web developer, web analyst</sm></more> 
-      </p>
-    </div>
-
-    <div class="col-lg-6 col-lg-offset-3">
-      <p><%= image_tag 'pocketmath.png', class: 'img-responsive'%></p>
-    </div>
-    <div class="col-lg-3">
-        <p><a href='http://pockemath.com' target='_blank'>POCKETMATH</a></p>
-        <p><more>PocketMath is the world's largest, 100% self-serve, mobile demand-side platform
-(DSP) for programmatic mobile.We make it easy to buy smartphone and tablet ad impressions, within apps, games,
-and mobile websites - all in real-time. In one platform, you gain immediate
-access to the world's supply of mobile real-time bidding (RTB) inventory!
-            <br/><br/>
-          <sm><i class="fa fa-tag"></i> web developer</sm></more> 
-        </p>
-    </div>
-
-    <div class="col-lg-6 col-lg-offset-3">
-      <p><%= image_tag 'spuul.jpg', class: 'img-responsive'%></p>
-    </div>
-    <div class="col-lg-3">
-        <p><a href='https://spuul.com' target='_blank'>SPUUL</a></p>
-      <p><more>Spuul offers an over-the-top (OTT) service across Web,
-          mobile/tablets (iOS, Android), smart TVs, and Chromecast to stream and
-          download feature-length movies, short films, and TV shows in Hindi,
-          Tamil, Telugu, and other Indian regional languages. The service is
-          available worldwide.<br/><br/>
-        <sm><i class="fa fa-tag"></i> web developer</sm></more> 
-      </p>
-    </div>
-
-    <div class="col-lg-6 col-lg-offset-3">
-      <p><%= image_tag 'caresharing.jpg', class: 'img-responsive'%></p>
-    </div>
-    <div class="col-lg-3">
-        <p><a href='http://caresharing.com' target='_blank'>CARESHARING</a></p>
-      <p><more>We create and develop software applications for the healthcare
-          industry.Our products focus mainly on patient care. These are used
-          by general practicioners, physiotherapists, dietitians, internists, and
-          medical specialists to access and store medical data of patients that
-          has chronic diseases such as diabetes, COPD and CVRM. These allow them
-          to collaborate and provide the ideal patient care.<br/><br/>
-       <sm><i class="fa fa-tag"></i> software developer</sm></more> 
-      </p>
-    </div>
-
-  </div><!--/.row -->
-  <br>
   <br>
 </div><!--/.container -->
 <section id="contact" name="contact"></section>
@@ -477,15 +372,7 @@ access to the world's supply of mobile real-time bidding (RTB) inventory!
         <h5>CONTACT</h5>
       </div>
       <div class="col-lg-6">
-        <p><t>Email</t><br/>
-            <a href='mailto:jralquisola@gmail.com'>jralquisola@gmail.com</a> <br/>
-        </p>
-        <p><t>Adress</t><br/>
-          Sims Drive, Singapore<br/>
-        </p>
-        <p><t>Skype</t><br/>
-          <a href='skype:jalquisola?call'>jalquisola</a> <br/>
-        </p>
+        <a href="mailto:jralquisola@gmail.com" class="btn btn-lg btn-danger"><strong>Hire Me!</strong></a>
       </div>
       <div class="col-lg-3">
         <p><sm>SOCIAL LINKS</sm></p>
